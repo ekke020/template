@@ -22,6 +22,6 @@ jobs:
            git add --all
            git commit -m "Updated deployment"
            git switch -c main
-           git pull
+           git pull origin main
            git merge test
            git push origin main
