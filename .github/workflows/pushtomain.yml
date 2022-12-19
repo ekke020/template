@@ -22,7 +22,7 @@ jobs:
            git add --all
            git commit -m "Updated deployment"
            git pull -r
-      - name: Push changes
+       - name: Push changes
          uses: ad-m/github-push-action@master
          with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
