@@ -1,6 +1,9 @@
 name: push past branch protection
 
 on:
+  push:
+    ignore_branches:
+      - main
   workflow_dispatch: {}
 
 jobs:
