@@ -19,10 +19,10 @@ jobs:
            git --version
            git config --local user.email "action@github.com"
            git config --local user.name "GitHub Action"
-           git pull -r
            git add --all
            git commit -m "Updated deployment"
-       - name: Push changes
+           git pull -r
+      - name: Push changes
          uses: ad-m/github-push-action@master
          with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
