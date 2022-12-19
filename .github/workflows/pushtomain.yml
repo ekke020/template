@@ -21,7 +21,8 @@ jobs:
            git config --local user.name "GitHub Action"
            git add --all
            git commit -m "Updated deployment"
-           git switch -c main
-           git pull origin main
+           git fetch origin
+           git switch -c main origin/main
+           git pull
            git merge test
            git push origin main
